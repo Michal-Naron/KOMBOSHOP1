@@ -1,0 +1,203 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.product-details {
+  padding-top: v.$navbar-height;
+  background: v.$color-background;
+
+  &__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: clamp(3rem, 7vw, 7rem);
+    align-items: center;
+    padding-top: clamp(3rem, 7vw, 6rem);
+    padding-bottom: clamp(4rem, 8vw, 8rem);
+  }
+
+  &__gallery {
+    min-width: 0;
+  }
+
+  &__main-image-wrap {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: v.$radius-large;
+    background: v.$color-background-alt;
+    box-shadow: v.$shadow-image;
+  }
+
+  &__main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__thumbnails {
+    display: flex;
+    gap: v.$space-4;
+    margin-top: v.$space-4;
+  }
+
+  &__thumbnail {
+    width: 6rem;
+    aspect-ratio: 1;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid v.$color-transparent;
+    border-radius: v.$radius-medium;
+    background: v.$color-background-alt;
+    transition:
+      border-color v.$transition-base,
+      transform v.$transition-base;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &--active {
+      border-color: v.$color-primary;
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &__back {
+    display: inline-flex;
+    gap: v.$space-2;
+    align-items: center;
+    margin-bottom: v.$space-8;
+    color: v.$color-text-secondary;
+    font-weight: 700;
+
+    &:hover,
+    &:focus-visible {
+      color: v.$color-primary;
+    }
+  }
+
+  &__content {
+    h1 {
+      margin: v.$space-4 0 v.$space-5;
+      font-family: v.$font-heading;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+  }
+
+  &__short-description {
+    margin: 0;
+    color: v.$color-text-secondary;
+    font-size: 1.25rem;
+    line-height: 1.65;
+  }
+
+  &__price-row {
+    display: flex;
+    align-items: center;
+    gap: v.$space-4;
+    margin: v.$space-7 0;
+    padding: v.$space-5 0;
+    border-top: 1px solid v.$color-border;
+    border-bottom: 1px solid v.$color-border;
+
+    strong {
+      font-family: v.$font-heading;
+      font-size: 2rem;
+    }
+
+    span {
+      padding: v.$space-2 v.$space-3;
+      border-radius: v.$radius-pill;
+      color: v.$color-primary;
+      background: v.$color-primary-soft;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    color: v.$color-text-secondary;
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
+
+  &__ingredients {
+    margin-top: v.$space-8;
+
+    h2 {
+      font-family: v.$font-heading;
+      font-size: 1.65rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: v.$space-3;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      padding: v.$space-3 v.$space-4;
+      border: 1px solid v.$color-border;
+      border-radius: v.$radius-pill;
+      color: v.$color-text-secondary;
+      background: v.$color-surface;
+    }
+  }
+
+  &__order {
+    padding: clamp(4rem, 9vw, 8rem) 0;
+    color: v.$color-text-on-dark;
+    background: v.$color-primary;
+    text-align: center;
+
+    h2 {
+      margin: v.$space-4 0 v.$space-5;
+      font-family: v.$font-heading;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1;
+    }
+
+    p:not(.eyebrow) {
+      max-width: 42rem;
+      margin: 0 auto;
+      color: v.$color-text-on-dark-muted;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+  }
+
+  &__phone-buttons {
+    display: flex;
+    justify-content: center;
+    gap: v.$space-4;
+    margin-top: v.$space-8;
+  }
+
+  @include m.down-tablet {
+    &__hero {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      h1 {
+        max-width: 12ch;
+      }
+    }
+  }
+
+  @include m.down-mobile {
+    &__phone-buttons {
+      flex-direction: column;
+    }
+
+    &__phone-buttons .button {
+      width: 100%;
+    }
+  }
+}

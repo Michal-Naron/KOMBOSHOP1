@@ -1,0 +1,85 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.footer {
+  color: v.$color-text-on-dark;
+  background: v.$color-footer;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 0.8fr;
+    gap: v.$space-8;
+    padding-top: v.$space-10;
+    padding-bottom: v.$space-10;
+
+    p {
+      max-width: 24rem;
+      color: v.$color-text-on-dark-muted;
+    }
+  }
+
+  &__brand {
+    font-family: v.$font-heading;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  &__nav,
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$space-3;
+  }
+
+  &__nav a,
+  &__contact a {
+    color: v.$color-text-on-dark-muted;
+    transition: color v.$transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: v.$color-accent;
+    }
+  }
+
+  &__contact span {
+    color: v.$color-text-on-dark-muted;
+    overflow-wrap: anywhere;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: v.$space-6;
+    padding-top: v.$space-5;
+    padding-bottom: v.$space-5;
+    border-top: 1px solid v.$color-border-on-dark;
+    color: v.$color-text-on-dark-muted;
+    font-size: 0.85rem;
+  }
+
+  @include m.down-tablet {
+    &__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__inner > div:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @include m.down-mobile {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__inner > div:first-child {
+      grid-column: auto;
+    }
+
+    &__bottom {
+      flex-direction: column;
+    }
+  }
+}

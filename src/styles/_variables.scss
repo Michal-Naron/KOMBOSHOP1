@@ -1,0 +1,126 @@
+// Główny kolor marki – przyciski, aktywne elementy, linki i ważne wyróżnienia.
+$color-primary: #388139;
+
+// Jaśniejsza wersja głównego koloru – delikatne tła etykiet i oznaczeń.
+$color-primary-soft: #f2e3eb;
+
+// Kolor pomocniczy – elementy związane z naturą, zielenią i świeżością.
+$color-secondary: #667548;
+
+// Kolor akcentujący – drobne dekoracje, linie i wyróżniki inspirowane miodem.
+$color-accent: #e4b34d;
+
+// Ciemniejszy akcent – wyraziste dekoracje na jasnym tle.
+$color-accent-dark: #a77016;
+
+// Podstawowe tło strony – jasny, ciepły krem.
+$color-background: #f7f0e3;
+
+// Alternatywne tło sekcji – lekko przygaszony odcień kremowy.
+$color-background-alt: #eee5d5;
+
+// Ciemne tło sekcji kontaktowej i wybranych elementów.
+$color-background-dark: #26301f;
+
+// Tło kart, paneli i treści znajdujących się na jasnym tle.
+$color-surface: #fffdf7;
+
+// Półprzezroczyste tło nawigacji i etykiet nakładanych na zdjęcia.
+$color-surface-translucent: rgba(255, 253, 247, 0.92);
+
+// Półprzezroczyste tło kart umieszczonych na ciemnej sekcji.
+$color-surface-on-dark: rgba(255, 255, 255, 0.07);
+
+// Mocniej widoczne tło kart po najechaniu na ciemnej sekcji.
+$color-surface-on-dark-hover: rgba(255, 255, 255, 0.12);
+
+// Główny kolor tekstu na jasnym tle.
+$color-text-primary: #20231d;
+
+// Drugorzędny kolor tekstu – opisy, akapity i informacje pomocnicze.
+$color-text-secondary: #646659;
+
+// Kolor tekstu umieszczanego na ciemnych tłach i zdjęciach.
+$color-text-on-dark: #fffdf7;
+
+// Przygaszony tekst na ciemnym tle.
+$color-text-on-dark-muted: #d9dccf;
+
+// Standardowy kolor obramowań kart, pól i separatorów.
+$color-border: #d8cdbb;
+
+// Mocniejsze obramowanie używane przy interakcji z kartą.
+$color-border-strong: #ad9c84;
+
+// Delikatne obramowania na ciemnych tłach.
+$color-border-on-dark: rgba(255, 255, 255, 0.22);
+
+// Kolor elementów informujących o powodzeniu; gotowy do użycia przy przyszłych komunikatach.
+$color-success: #557044;
+
+// Ciemne tło stopki.
+$color-footer: #171d15;
+
+// Dekoracyjny zielony kolor dużych kształtów w tle.
+$color-decorative: #72824f;
+
+// Przezroczysty kolor używany przy obramowaniach i wskaźnikach.
+$color-transparent: transparent;
+
+// Delikatna warstwa przyciemniająca zdjęcia w sliderze.
+$color-overlay-soft: rgba(245, 239, 239, 0.1);
+
+// Standardowa warstwa przyciemniająca zdjęcia w sliderze.
+$color-overlay: rgba(245, 239, 239, 0.1);
+
+// Najmocniejsza warstwa przyciemniająca pod tekstem na zdjęciu.
+// $color-overlay-strong: rgba(18, 22, 14, 0.1);
+$color-overlay-strong: rgba(245, 239, 239, 0.1);
+// Font nagłówków i nazwy marki.
+$font-heading: Georgia, "Times New Roman", serif;
+
+// Font tekstów, przycisków i nawigacji.
+$font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Maksymalna szerokość głównego kontenera.
+$content-width: 1280px;
+
+// Wysokość górnej nawigacji.
+$navbar-height: 5.25rem;
+
+// Odstęp strony na małych ekranach.
+$page-gutter-mobile: 1.25rem;
+
+// Skala odstępów używana w całym projekcie.
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 2.5rem;
+$space-8: 3rem;
+$space-9: 4rem;
+$space-10: 5rem;
+
+// Promienie zaokrągleń elementów.
+$radius-small: 0.75rem;
+$radius-medium: 1.15rem;
+$radius-large: 1.8rem;
+$radius-pill: 999px;
+$radius-round: 50%;
+
+// Cienie kart, zdjęć oraz nawigacji.
+$shadow-card-subtle: 0 0.5rem 1.5rem rgba(35, 31, 24, 0.06);
+$shadow-card: 0 1.4rem 3.4rem rgba(35, 31, 24, 0.15);
+$shadow-image: 0 2rem 5rem rgba(35, 31, 24, 0.2);
+$shadow-navbar: 0 0.75rem 2.2rem rgba(35, 31, 24, 0.1);
+$shadow-soft: 0 0.5rem 1.5rem rgba(35, 31, 24, 0.16);
+
+// Czasy animacji i przejść.
+$transition-base: 220ms ease;
+$transition-slow: 500ms ease;
+$transition-slider: 900ms ease;
+
+// Warstwa nawigacji nad pozostałą zawartością.
+$z-navbar: 100;

@@ -1,0 +1,226 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.hero-slider {
+  position: relative;
+  min-height: 42rem;
+  height: 100svh;
+  overflow: hidden;
+  color: v.$color-text-on-dark;
+  background: v.$color-background-dark;
+
+  &__slides,
+  &__slide,
+  &__slide picture,
+  &__slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slide {
+    opacity: 0;
+    transform: scale(1.03);
+    transition:
+      opacity v.$transition-slider,
+      transform v.$transition-slider;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__slide--active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      v.$color-overlay-strong 0%,
+      v.$color-overlay 50%,
+      v.$color-overlay-soft 100%
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: v.$content-width;
+    padding-top: v.$navbar-height;
+
+    h1 {
+      max-width: 12ch;
+      margin: v.$space-4 0 v.$space-5;
+      font-family: v.$font-heading;
+      font-size: clamp(3rem, 6vw, 6.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+      text-wrap: balance;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: v.$space-3;
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      width: 2.5rem;
+      height: 2px;
+      background: v.$color-accent;
+    }
+  }
+
+  &__lead {
+    max-width: 35rem;
+    margin: 0 0 v.$space-8;
+    font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+    line-height: 1.65;
+    color: v.$color-text-on-dark-muted;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    width: 3.25rem;
+    height: 3.25rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid v.$color-border-on-dark;
+    border-radius: v.$radius-round;
+    color: v.$color-text-on-dark;
+    background: v.$color-overlay-soft;
+    backdrop-filter: blur(8px);
+    transform: translateY(-50%);
+    transition:
+      background-color v.$transition-base,
+      transform v.$transition-base;
+
+    span {
+      font-size: 2.25rem;
+      line-height: 1;
+      transform: translateY(-2px);
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: v.$color-primary;
+      transform: translateY(-50%) scale(1.05);
+    }
+  }
+
+  &__arrow--previous {
+    left: v.$space-6;
+  }
+
+  &__arrow--next {
+    right: v.$space-6;
+  }
+
+  &__dots {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: v.$space-7;
+    display: flex;
+    gap: v.$space-3;
+    transform: translateX(-50%);
+  }
+
+  &__dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid v.$color-text-on-dark;
+    border-radius: v.$radius-round;
+    background: v.$color-transparent;
+    transition:
+      width v.$transition-base,
+      background-color v.$transition-base;
+  }
+
+  &__dot--active {
+    width: 2.4rem;
+    background: v.$color-text-on-dark;
+  }
+
+  @include m.down-tablet {
+    min-height: 40rem;
+
+    &__content {
+      justify-content: flex-end;
+      padding-bottom: 8rem;
+
+      h1 {
+        max-width: 10ch;
+        font-size: clamp(3rem, 12vw, 5rem);
+      }
+    }
+
+    &__lead {
+      max-width: 30rem;
+    }
+
+    &__arrow {
+      top: auto;
+      bottom: v.$space-6;
+      width: 2.8rem;
+      height: 2.8rem;
+      transform: none;
+
+      &:hover,
+      &:focus-visible {
+        transform: scale(1.05);
+      }
+    }
+
+    &__arrow--previous {
+      left: v.$page-gutter-mobile;
+    }
+
+    &__arrow--next {
+      right: v.$page-gutter-mobile;
+    }
+
+    &__dots {
+      bottom: 2.35rem;
+    }
+  }
+
+  @include m.down-mobile {
+    &__overlay {
+      background: linear-gradient(
+        0deg,
+        v.$color-overlay-strong 0%,
+        v.$color-overlay 48%,
+        v.$color-overlay-soft 100%
+      );
+    }
+
+    &__content {
+      padding-bottom: 7rem;
+    }
+
+    &__lead {
+      font-size: 1rem;
+    }
+  }
+}

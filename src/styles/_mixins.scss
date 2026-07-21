@@ -1,0 +1,25 @@
+@use "breakpoints" as b;
+
+@mixin down-mobile {
+  @media (max-width: b.$breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin down-tablet {
+  @media (max-width: b.$breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin down-desktop {
+  @media (max-width: b.$breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin down-large {
+  @media (max-width: b.$breakpoint-large) {
+    @content;
+  }
+}

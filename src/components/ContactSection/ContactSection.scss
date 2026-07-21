@@ -1,0 +1,156 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.contact-section {
+  position: relative;
+  scroll-margin-top: v.$navbar-height;
+  overflow: hidden;
+  color: v.$color-text-on-dark;
+  background: v.$color-background-dark;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: v.$radius-round;
+    background: v.$color-decorative;
+    filter: blur(1px);
+    opacity: 0.3;
+  }
+
+  &::before {
+    width: 24rem;
+    height: 24rem;
+    top: -12rem;
+    right: -8rem;
+  }
+
+  &::after {
+    width: 15rem;
+    height: 15rem;
+    left: -7rem;
+    bottom: -8rem;
+    background: v.$color-primary;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.65fr);
+    gap: v.$space-8;
+    align-items: end;
+    margin-bottom: v.$space-10;
+
+    h2 {
+      max-width: 14ch;
+      margin: v.$space-4 0 0;
+      font-family: v.$font-heading;
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    > p:last-child {
+      margin: 0;
+      color: v.$color-text-on-dark-muted;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: v.$space-5;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: v.$space-5;
+    margin: v.$space-10 0 0;
+    padding-top: v.$space-7;
+    border-top: 1px solid v.$color-border-on-dark;
+
+    div {
+      min-width: 0;
+    }
+
+    dt {
+      margin-bottom: v.$space-2;
+      color: v.$color-accent;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      margin: 0;
+      color: v.$color-text-on-dark-muted;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  @include m.down-tablet {
+    &__intro {
+      grid-template-columns: 1fr;
+    }
+
+    &__details {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include m.down-mobile {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 15rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid v.$color-border-on-dark;
+  border-radius: v.$radius-large;
+  background: v.$color-surface-on-dark;
+  backdrop-filter: blur(12px);
+  transition:
+    transform v.$transition-base,
+    background-color v.$transition-base,
+    border-color v.$transition-base;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.4rem);
+    border-color: v.$color-accent;
+    background: v.$color-surface-on-dark-hover;
+  }
+
+  &__label {
+    color: v.$color-accent;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  strong {
+    margin: auto 0 v.$space-5;
+    font-family: v.$font-heading;
+    font-size: clamp(2rem, 4.5vw, 3.8rem);
+    line-height: 1;
+  }
+
+  &__action {
+    font-weight: 700;
+  }
+}

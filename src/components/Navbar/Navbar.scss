@@ -1,0 +1,155 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: v.$z-navbar;
+  color: v.$color-text-on-dark;
+  transition:
+    background-color v.$transition-base,
+    box-shadow v.$transition-base,
+    color v.$transition-base;
+
+  &--scrolled,
+  &--open,
+  &--solid {
+    color: v.$color-text-primary;
+    background: v.$color-surface-translucent;
+    box-shadow: v.$shadow-navbar;
+    backdrop-filter: blur(16px);
+  }
+
+  &__inner {
+    min-height: v.$navbar-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$space-6;
+  }
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: v.$space-3;
+    font-family: v.$font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  &__brand-mark {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: v.$radius-round;
+    color: v.$color-text-on-dark;
+    background: v.$color-primary;
+    font-size: 1.25rem;
+    box-shadow: v.$shadow-soft;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: v.$space-6;
+  }
+
+  &__link {
+    position: relative;
+    padding: v.$space-2 0;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 2px;
+      background: v.$color-accent;
+      transition: right v.$transition-base;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      right: 0;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: v.$space-2;
+    border-radius: v.$radius-small;
+    color: inherit;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin: 5px 0;
+      background: currentColor;
+      transition: transform v.$transition-base, opacity v.$transition-base;
+    }
+  }
+
+  &--open &__toggle {
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+
+  @include m.down-tablet {
+    &__toggle {
+      display: block;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: grid;
+      gap: 0;
+      padding: v.$space-4 v.$page-gutter-mobile v.$space-6;
+      color: v.$color-text-primary;
+      background: v.$color-surface;
+      border-top: 1px solid v.$color-border;
+      box-shadow: v.$shadow-card;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-0.75rem);
+      transition:
+        opacity v.$transition-base,
+        visibility v.$transition-base,
+        transform v.$transition-base;
+    }
+
+    &__nav--open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    &__link {
+      padding: v.$space-4 0;
+      border-bottom: 1px solid v.$color-border;
+    }
+
+    &__phone {
+      margin-top: v.$space-5;
+      justify-self: stretch;
+    }
+  }
+}
