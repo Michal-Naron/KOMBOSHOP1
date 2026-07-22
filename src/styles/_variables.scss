@@ -68,14 +68,13 @@ $color-decorative: #72824f;
 $color-transparent: transparent;
 
 // Delikatna warstwa przyciemniająca zdjęcia w sliderze.
-$color-overlay-soft: rgba(245, 239, 239, 0.1);
+$color-overlay-soft: rgba(33, 27, 20, 0.12);
 
 // Standardowa warstwa przyciemniająca zdjęcia w sliderze.
-$color-overlay: rgba(245, 239, 239, 0.1);
+$color-overlay: rgba(33, 27, 20, 0.25);
 
 // Najmocniejsza warstwa przyciemniająca pod tekstem na zdjęciu.
-// $color-overlay-strong: rgba(18, 22, 14, 0.1);
-$color-overlay-strong: rgba(245, 239, 239, 0.1);
+$color-overlay-strong: rgba(33, 27, 20, 0.45);
 // Font nagłówków i nazwy marki.
 $font-heading: Georgia, "Times New Roman", serif;
 
