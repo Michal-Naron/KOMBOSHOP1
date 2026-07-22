@@ -16,7 +16,7 @@ export const products = [
       "Owocowa, wyrazista kompozycja hibiskusa i malin o intensywnym kolorze.",
     description:
       "Rzemieślnicza kombucha przygotowana na bazie naparu z hibiskusa i zielonej herbaty, uzupełniona smakiem malin. Najlepiej smakuje dobrze schłodzona.",
-    price: "25,00 zł",
+    price: "33,00 zł",
     volume: "750 ml",
     images: [
       {
@@ -44,7 +44,7 @@ export const products = [
       "Klasyczna, lekka kombucha o świeżym i delikatnie herbacianym profilu.",
     description:
       "Podstawowy wariant marki Kombo dla osób, które lubią czysty smak fermentowanej zielonej herbaty. Orzeźwiająca i uniwersalna.",
-    price: "23,00 zł",
+    price: "27,00 zł",
     volume: "750 ml",
     images: [
       {
@@ -66,7 +66,7 @@ export const products = [
       "Delikatny napój fermentowany z zielonej herbaty i miodu.",
     description:
       "Jun to łagodniejsza, subtelnie miodowa odmiana napoju fermentowanego. Powstaje na bazie zielonej herbaty oraz miodu i najlepiej smakuje schłodzony.",
-    price: "27,00 zł",
+    price: "37,00 zł",
     volume: "750 ml",
     images: [
       {
@@ -88,7 +88,7 @@ export const products = [
       "Głęboki hibiskusowy smak z przyjemnie kwaskowym charakterem.",
     description:
       "Pełna aromatu kombucha na bazie hibiskusa. Jej wyrazisty profil dobrze sprawdza się jako orzeźwiający napój do posiłku lub na piknik.",
-    price: "24,00 zł",
+    price: "27,00 zł",
     volume: "750 ml",
     images: [
       {
