@@ -1,4 +1,4 @@
-import aboutImage from "../../assets/images/banners/koza_z_butelka.jpg";
+import aboutImage from "../../assets/images/banners/koza_z_butelka1.jpg";
 import { useReveal } from "../../hooks/useReveal";
 import "./AboutSection.scss";
 
