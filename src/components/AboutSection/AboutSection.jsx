@@ -22,17 +22,17 @@ function AboutSection() {
           <p className="eyebrow">Poznaj Kombo</p>
           <h2 id="about-title">Smak tworzony powoli i naturalnie</h2>
           <p>
-            Kombo to rzemieślniczy napój fermentowany przygotowywany na bazie
+            Kombucha to napój fermentowany przygotowywany na bazie
             herbaty, naturalnych dodatków i kultur fermentacyjnych. Każdy smak
             ma własny charakter — od klasycznej zielonej herbaty po intensywny
             hibiskus z maliną.
           </p>
           <p>
-            Nie składamy obietnic leczniczych. Skupiamy się na jakości,
+            Skupiamy się na jakości,
             orzeźwiającym smaku i prostym składzie.
           </p>
 
-          <div className="about-section__features" aria-label="Cechy produktów">
+          {/* <div className="about-section__features" aria-label="Cechy produktów">
             <div>
               <strong>Naturalne dodatki</strong>
               <span>Herbata, owoce, zioła i miód.</span>
@@ -41,7 +41,7 @@ function AboutSection() {
               <strong>Różne smaki</strong>
               <span>Klasyczne oraz owocowe warianty.</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
