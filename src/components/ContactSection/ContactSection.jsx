@@ -9,13 +9,12 @@ function ContactSection() {
     <section id="kontakt" className="contact-section section" aria-labelledby="contact-title">
       <div ref={revealRef} className="contact-section__inner container reveal">
         <div className="contact-section__intro">
-          <p className="eyebrow eyebrow--light">Kontakt</p>
           <h2 id="contact-title">Zamów kombuchę telefonicznie</h2>
-          <p>
+          {/* <p>
             Skontaktuj się z nami, aby sprawdzić dostępne smaki, liczbę butelek
             oraz ustalić sposób odbioru. Na stronie nie prowadzimy sprzedaży
             internetowej.
-          </p>
+          </p> */}
         </div>
 
         <div className="contact-section__cards">
@@ -39,7 +38,14 @@ function ContactSection() {
           </div>
           <div>
             <dt>Adres / odbiór</dt>
-            <dd>{contactData.address}</dd>
+<dd>
+  {contactData.address.split(/(?=\d{2}-\d{3})/).map((line, index) => (
+    <>
+      {line.trim()}
+      {index === 0 && <br />}
+    </>
+  ))}
+</dd>
           </div>
           <div>
             <dt>Godziny kontaktu</dt>
