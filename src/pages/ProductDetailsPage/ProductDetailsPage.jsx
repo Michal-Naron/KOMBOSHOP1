@@ -62,7 +62,7 @@ function ProductDetailsPage() {
           <p className="eyebrow">Kombucha Kombo</p>
           <h1>{product.name}</h1>
           <p className="product-details__short-description">{product.shortDescription}</p>
-
+          <a className="product-details__button" href="#order-title">Zamów</a>
           <div className="product-details__price-row">
             <strong>{product.price}</strong>
             <span>{product.volume}</span>

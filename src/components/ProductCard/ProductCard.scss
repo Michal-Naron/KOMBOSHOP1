@@ -8,6 +8,7 @@
   border-radius: v.$radius-large;
   background: v.$color-surface;
   box-shadow: v.$shadow-card-subtle;
+  // min-width: 405px;
   transition:
     transform v.$transition-base,
     box-shadow v.$transition-base,
@@ -96,6 +97,7 @@
   &__price {
     font-family: v.$font-heading;
     font-size: 1.35rem;
+    white-space: nowrap;
   }
 
   &__link {

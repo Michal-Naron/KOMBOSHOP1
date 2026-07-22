@@ -72,7 +72,8 @@ p {
 }
 
 .container {
-  width: min(100% - 3rem, v.$content-width);
+  width: min(100% - 2rem, v.$content-width);
+  // width: 90%;
   margin-inline: auto;
 }
 

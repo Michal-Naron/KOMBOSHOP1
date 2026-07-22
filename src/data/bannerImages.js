@@ -1,7 +1,7 @@
 import banner1Desktop from "../assets/images/banners/banner-1-desktop.jpg";
 import banner1Mobile from "../assets/images/banners/banner-1-mobile.jpg";
-import banner2Desktop from "../assets/images/banners/banner-2-desktop.jpg";
-import banner2Mobile from "../assets/images/banners/banner-2-mobile.jpg";
+import banner2Desktop from "../assets/images/banners/banner-2.jpg";
+import banner2Mobile from "../assets/images/banners/banner-2.jpg";
 import banner3Desktop from "../assets/images/banners/banner-3-desktop.jpg";
 import banner3Mobile from "../assets/images/banners/banner-3-mobile.jpg";
 

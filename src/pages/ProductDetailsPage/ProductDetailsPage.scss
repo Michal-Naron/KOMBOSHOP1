@@ -200,4 +200,48 @@
       width: 100%;
     }
   }
+  &__button {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-3 v.$space-6;
+
+  background: v.$color-primary;
+  color: v.$color-text-on-dark;
+  border: 2px solid v.$color-primary;
+  border-radius: v.$radius-pill;
+
+  font-family: v.$font-body;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow: v.$shadow-card-subtle;
+
+  transition:
+    background-color v.$transition-base,
+    border-color v.$transition-base,
+    color v.$transition-base,
+    transform v.$transition-base,
+    box-shadow v.$transition-base;
+
+  &:hover {
+    background: v.$color-secondary;
+    border-color: v.$color-secondary;
+    box-shadow: v.$shadow-card;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: v.$shadow-soft;
+  }
+
+  &:focus-visible {
+    outline: 3px solid v.$color-accent;
+    outline-offset: 4px;
+  }
+}
 }
