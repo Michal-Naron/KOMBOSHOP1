@@ -20,16 +20,16 @@ function AboutSection() {
 
         <div className="about-section__content">
           <p className="eyebrow">Poznaj Kombo</p>
-          <h2 id="about-title">Smak tworzony powoli i naturalnie</h2>
+          <h2 id="about-title">Prosty skład. Maksimum smaku.</h2>
           <p>
-            Kombucha to napój fermentowany przygotowywany na bazie
-            herbaty, naturalnych dodatków i kultur fermentacyjnych. Każdy smak
-            ma własny charakter — od klasycznej zielonej herbaty po intensywny
-            hibiskus z maliną.
+            Kombucha to napój przygotowywany na bazie herbaty, naturalnych dodatków i żywych kultur fermentacyjnych. Bo dobry smak nie potrzebuje długiej listy składników.
+          </p>
+          <h3>Nie pasteryzujemy. Z natury.</h3>
+          <p>
+            Dzięki temu w każdej butelce zachowują się żywe kultury bakterii i drożdży, które nadają kombuchy jej probiotyczny charakter i sprawiają, że jest tym, czym naprawdę powinna być. Napojem bliższym naturze niż jakikolwiek inny na półce. 
           </p>
           <p>
-            Skupiamy się na jakości,
-            orzeźwiającym smaku i prostym składzie.
+            Fermentacja i naturalnie niskie pH skutecznie chronią przed rozwojem niepożądanych mikroorganizmów, dlatego brak pasteryzacji nie oznacza ryzyka, a jedynie pełniejszy, bardziej autentyczny smak.
           </p>
 
           {/* <div className="about-section__features" aria-label="Cechy produktów">

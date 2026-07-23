@@ -1,4 +1,4 @@
-# Kombo – strona kombuchy w React + SCSS + Docker
+# Kombo - strona kombuchy w React + SCSS + Docker
 
 Gotowa, responsywna strona prezentująca cztery warianty kombuchy. Projekt nie ma koszyka ani płatności — zamówienia są realizowane telefonicznie.
 

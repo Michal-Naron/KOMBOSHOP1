@@ -33,7 +33,7 @@ function Navbar() {
       } ${!isHomePage ? "navbar--solid" : ""}`}
     >
       <div className="navbar__inner container">
-        <Link className="navbar__brand" to="/" aria-label="Kombo – strona główna">
+        <Link className="navbar__brand" to="/" aria-label="Kombo - strona główna">
           <span>{contactData.brandName}</span>
         </Link>
 

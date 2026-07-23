@@ -77,10 +77,9 @@ function HeroSlider() {
 
       <div className="hero-slider__content container">
         <p className="hero-slider__eyebrow">Rzemieślnicza kombucha</p>
-        <h1>Naturalnie fermentowana. Pełna smaku.</h1>
+        <h1>Fermentowana naturalnie i niepasteryzowana. Pełna smaku. </h1>
         <p className="hero-slider__lead">
-          Poznaj kombuchę Kombo przygotowywaną z herbaty, owoców, ziół i
-          starannie dobranych składników.
+          Poznaj Kombo - kombuchę warzoną ze starannie dobieranych herbat 9owoców.
         </p>
         <Link className="button button--light" to="/#oferta">
           Zobacz ofertę

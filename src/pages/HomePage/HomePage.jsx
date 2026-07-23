@@ -6,7 +6,7 @@ import { usePageMeta } from "../../hooks/usePageMeta";
 
 function HomePage() {
   usePageMeta(
-    "Kombo – naturalna kombucha w różnych smakach",
+    "Kombo - naturalna kombucha w różnych smakach",
     "Poznaj rzemieślniczą kombuchę Kombo: zielona herbata, hibiskus, malina oraz Jun z miodem. Sprawdź ofertę i zamów telefonicznie.",
   );
 

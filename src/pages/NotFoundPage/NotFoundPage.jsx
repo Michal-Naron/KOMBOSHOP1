@@ -4,7 +4,7 @@ import "./NotFoundPage.scss";
 
 function NotFoundPage() {
   usePageMeta(
-    "Nie znaleziono strony – Kombo",
+    "Nie znaleziono strony - Kombo",
     "Podana strona nie istnieje. Wróć na stronę główną Kombo.",
   );
 
