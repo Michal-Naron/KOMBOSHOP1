@@ -80,6 +80,7 @@ function HeroSlider() {
         <h1>Fermentowana naturalnie i niepasteryzowana. Pełna smaku. </h1>
         <p className="hero-slider__lead">
           Poznaj Kombo - kombuchę warzoną ze starannie dobieranych herbat i owoców.
+          
         </p>
         <Link className="button button--light" to="/#oferta">
           Zobacz ofertę
