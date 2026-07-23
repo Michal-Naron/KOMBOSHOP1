@@ -15,7 +15,7 @@ function ProductDetailsPage() {
   }, [slug]);
 
   usePageMeta(
-    product ? `${product.name} – Kombo` : "Produkt nie istnieje – Kombo",
+    product ? `${product.name} - Kombo` : "Produkt nie istnieje - Kombo",
     product
       ? `${product.shortDescription} Sprawdź szczegóły i zamów telefonicznie.`
       : "Nie znaleziono wybranego produktu.",
