@@ -7,6 +7,7 @@ const navItems = [
   { label: "Strona główna", to: "/" },
   { label: "Oferta", to: "/#oferta" },
   { label: "Kontakt", to: "/#kontakt" },
+  { label: "Regulamin", to: "/#kontakt" }
 ];
 
 function Navbar() {
