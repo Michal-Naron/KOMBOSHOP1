@@ -19,7 +19,7 @@ function Footer() {
           <Link to="/">Strona główna</Link>
           <Link to="/#oferta">Oferta</Link>
           <Link to="/#kontakt">Kontakt</Link>
-          <Link to="/#kontakt">Regulamin</Link>
+          <Link to="/regulamin">Regulamin</Link>
         </nav>
 
         <div className="footer__contact">
