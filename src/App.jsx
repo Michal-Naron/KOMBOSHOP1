@@ -5,6 +5,7 @@ import ScrollToHash from "./components/ScrollToHash/ScrollToHash";
 import HomePage from "./pages/HomePage/HomePage";
 import ProductDetailsPage from "./pages/ProductDetailsPage/ProductDetailsPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import PolicyPage from "./pages/PolicyPage/PolicyPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/oferta/:slug" element={<ProductDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/regulamin" element={<PolicyPage />} />
         </Routes>
       </main>
       {/* <Footer /> */}
