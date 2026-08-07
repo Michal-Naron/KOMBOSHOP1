@@ -21,7 +21,7 @@ function PolicyPage() {
             internetowego Kombo, działającego pod adresem www https://kombosklep.pl.
           </li>
           <li>
-            Właścicielem Sklepu jest Michał Naron, przedsiębiorca prowadzący działalność gospodarczą
+            Właścicielem Sklepu jest Elżbieta Naron-Grochalska, przedsiębiorca prowadzący działalność gospodarczą
             pod firmą Elgro ELŻBIETA NARON-GROCHALSKA Strzelin z siedzibą pod adresem: ul. Galla
             Anonima 12 57-100 Strzelin wpisany do Centralnej Ewidencji i Informacji o Działalności
             Gospodarczej, NIP: 6-211-119-942, REGON: 386-436-215 (dalej „Sprzedawca”).
