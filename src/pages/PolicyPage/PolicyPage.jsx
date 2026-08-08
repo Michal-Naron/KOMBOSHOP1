@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { usePageMeta } from "../../hooks/usePageMeta";
 import "./PolicyPage.scss";
 
@@ -17,23 +18,27 @@ function PolicyPage() {
         </div>
         <ol>
           <li>
-            Niniejszy regulamin (dalej „Regulamin”) określa zasady i warunki korzystania ze sklepu
-            internetowego Kombo, działającego pod adresem www https://kombosklep.pl.
+            Niniejszy regulamin (dalej <b>„Regulamin”</b>) określa zasady i warunki korzystania ze
+            sklepu internetowego <b>Kombo</b>, działającego pod adresem{" "}
+            <b>https://kombosklep.pl</b>.
           </li>
           <li>
-            Właścicielem Sklepu jest Elżbieta Naron-Grochalska, przedsiębiorca prowadzący działalność gospodarczą
-            pod firmą Elgro ELŻBIETA NARON-GROCHALSKA Strzelin z siedzibą pod adresem: ul. Galla
-            Anonima 12 57-100 Strzelin wpisany do Centralnej Ewidencji i Informacji o Działalności
-            Gospodarczej, NIP: 6-211-119-942, REGON: 386-436-215 (dalej „Sprzedawca”).
+            Właścicielem Sklepu jest <b>Elżbieta Naron-Grochalska</b>, przedsiębiorca prowadzący
+            działalność gospodarczą pod firmą{" "}
+            <b>Elgro ELŻBIETA NARON-GROCHALSKA Strzelin</b> z siedzibą pod adresem:{" "}
+            <b>ul. Galla Anonima 12, 57-100 Strzelin</b>, wpisany do Centralnej Ewidencji i
+            Informacji o Działalności Gospodarczej, <b>NIP: 6211119942</b>,{" "}
+            <b>REGON: 386436215</b> (dalej <b>„Sprzedawca”</b>).
           </li>
           <li>
             Dane kontaktowe Sprzedawcy są następujące:
             <br />
-            Adres do kontaktu: ul. Gazowa 52/11, 50-513 Wrocław
+            Adres do kontaktu: <b>ul. Gazowa 52/11, 50-513 Wrocław</b>
             <br />
-            Adres e-mail: info@kombosklep.pl
+            Adres e-mail: <b>info@kombosklep.pl</b>
             <br />
-            Numer telefonu: 518-730-717 (godziny obsługi telefonicznej klientów – w zakładce Kontakt).
+            Numer telefonu: <b>518-730-717</b> (godziny obsługi telefonicznej klientów – w zakładce
+            Kontakt).
           </li>
         </ol>
 
@@ -44,9 +49,15 @@ function PolicyPage() {
           <li>
             W celu korzystania ze Sklepu niezbędne jest posiadanie:
             <ul className="policy-page__list">
-              <li>komputera lub innego urządzenia z przeglądarką internetową;</li>
-              <li>dostępu do sieci Internet;</li>
-              <li>aktywnego adresu e-mail.</li>
+              <li>
+                <b>komputera lub innego urządzenia</b> z przeglądarką internetową;
+              </li>
+              <li>
+                dostępu do sieci <b>Internet</b>;
+              </li>
+              <li>
+                aktywnego <b>adresu e-mail</b>.
+              </li>
             </ul>
           </li>
         </ol>
@@ -55,10 +66,16 @@ function PolicyPage() {
           <b>Rozdział 3.</b> Dane osobowe
         </div>
         <ol>
-          <li>Administratorem danych osobowych klientów Sklepu jest Sprzedawca.</li>
+          <li>
+            <b>Administratorem danych osobowych</b> klientów Sklepu jest Sprzedawca.
+          </li>
           <li>
             Wszelkie informacje o przetwarzaniu danych osobowych klientów, jak i innych osób
-            korzystających ze strony internetowej Sklepu można przeczytać w Polityce prywatności.
+            korzystających ze strony internetowej Sklepu można przeczytać w{" "}
+            <Link to="/polityka-prywatnosci">
+              <b>Polityce prywatności</b>
+            </Link>
+            .
           </li>
         </ol>
 
@@ -196,9 +213,11 @@ function PolicyPage() {
     zamówienie powinna nastąpić w terminie <b>2 dni</b> od{" "}
     <b>przyjęcia zamówienia przez Sprzedawcę do realizacji</b> (rozdział 4,
     pkt 5), o ile w wiadomości e-mail Sprzedawcy nie wskazano innego terminu.
-    W braku zapłaty w ww. terminie Umowę uważa się za niezawartą. Zdanie
-    poprzednie nie dotyczy sytuacji, gdy Sprzedawca oferuje klientom płatność
-    odroczoną lub płatność w ratach za pośrednictwem zewnętrznego partnera.
+    Sprzedawca może <b>wstrzymać wysyłkę Towaru</b> do czasu otrzymania należnej
+    płatności. W przypadku braku zapłaty w wyznaczonym terminie Sprzedawca może
+    wyznaczyć klientowi <b>dodatkowy termin</b> na dokonanie płatności, a po jego
+    bezskutecznym upływie skorzystać z przysługujących mu na podstawie
+    obowiązujących przepisów prawa uprawnień, w tym <b>odstąpić od Umowy</b>.
   </li>
 </ol>
 <div className="policy-page__title">
@@ -223,10 +242,18 @@ function PolicyPage() {
   </li>
 
   <li>
-    Z wyjątkiem Towarów odbieranych przez klienta osobiście, zamówienie uważa się
-    za zrealizowane z chwilą <b>nadania przesyłki do klienta</b>, tj. powierzenia
-    przesyłki przewoźnikowi trudniącemu się przewozem tego rodzaju przesyłek.
-    Dokładny rzeczywisty termin doręczenia przesyłki określa przewoźnik.
+    W przypadku dostawy Towaru do klienta będącego konsumentem lub
+    Przedsiębiorcą Uprzywilejowanym Sprzedawca ponosi odpowiedzialność za{" "}
+    <b>przypadkową utratę lub uszkodzenie Towaru</b> do chwili jego wydania
+    klientowi.
+    <br />
+    Jeżeli klient będący konsumentem samodzielnie wybrał przewoźnika, którego
+    Sprzedawca nie oferował, odpowiedzialność za przypadkową utratę lub
+    uszkodzenie Towaru przechodzi na klienta z chwilą{" "}
+    <b>wydania Towaru temu przewoźnikowi</b>.
+    <br />
+    Dokładny termin doręczenia przesyłki może zależeć od wybranego sposobu
+    dostawy i przewoźnika.
   </li>
 
   <li>
@@ -244,7 +271,6 @@ function PolicyPage() {
     określonymi w rozdziale 5 Regulaminu.
   </li>
 </ol>
- jsx
 <div className="policy-page__title">
   <b>Rozdział 7.</b> Odstąpienie od umowy i wyjątki od prawa odstąpienia
 </div>
@@ -277,6 +303,15 @@ function PolicyPage() {
         w formie pisemnej na adres: ul. Gazowa 52/11, 50-513 Wrocław.
       </li>
     </ul>
+    Wzór formularza odstąpienia od Umowy stanowi{" "}
+    <a
+      className="policy-page__download-link"
+      href="/formularz_odstapienia_od_umowy.pdf"
+      download="formularz_odstapienia_od_umowy.pdf"
+    >
+      <b>Załącznik nr 1</b>
+    </a>{" "}
+    do Regulaminu (kliknij, aby pobrać).
   </li>
 
   <li>
@@ -419,7 +454,6 @@ function PolicyPage() {
     prawa.
   </li>
 </ol>
-  jsx
 <div className="policy-page__title">
   <b>Rozdział 8.</b> Reklamacje
 </div>

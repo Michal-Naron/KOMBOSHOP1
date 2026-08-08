@@ -18,8 +18,8 @@ function Footer() {
         <nav className="footer__nav" aria-label="Nawigacja w stopce">
           <Link to="/">Strona główna</Link>
           <Link to="/#oferta">Oferta</Link>
-          <Link to="/#kontakt">Kontakt</Link>
           <Link to="/regulamin">Regulamin</Link>
+          <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
         </nav>
 
         <div className="footer__contact">

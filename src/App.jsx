@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProductDetailsPage from "./pages/ProductDetailsPage/ProductDetailsPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import PolicyPage from "./pages/PolicyPage/PolicyPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/oferta/:slug" element={<ProductDetailsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
           <Route path="/regulamin" element={<PolicyPage />} />
+          <Route path="/polityka-prywatnosci" element={<PrivacyPolicyPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
