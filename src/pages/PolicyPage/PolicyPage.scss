@@ -8,6 +8,7 @@
     justify-content: center;
     flex-direction: column;
     font-family: v.$font-body;
+    margin-bottom: 50px;
     h1{
       margin-top: 5.5rem ;
     }
@@ -38,10 +39,32 @@
       text-align: left;
     }
 
+    p {
+      width: 100%;
+      margin: 0.75rem 0 0;
+      text-align: left;
+    }
+
+    &__effective {
+      width: 90%;
+      margin: 0.25rem 0 0;
+      text-align: center;
+    }
+
     &__list {
       margin: 0.5rem 0 0;
       padding-left: 1.25rem;
       list-style-type: disc;
+    }
+
+    &__download-link {
+      color: #1a5fb4;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      &:hover {
+        color: #15539b;
+      }
     }
 
 }
